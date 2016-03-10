@@ -46,3 +46,5 @@ set cursorline
 autocmd BufNewFile,BufRead *.sls set filetype=sls
 " set the cryptmethod to use blowfish2 rather than pkzip
 set cryptmethod=blowfish2
+" set to highlight searches
+set hlsearch
