@@ -48,3 +48,9 @@ autocmd BufNewFile,BufRead *.sls set filetype=sls
 set cryptmethod=blowfish2
 " set to highlight searches
 set hlsearch
+" macros
+" alphabetize words in a line with space as delimiter:
+:let @m=":call setline('.', join(sort(split(getline('.'), ' ')), \" \"))"
+" alphabetize words in a line with comma-space as delimiter:
+:let @n=":call setline('.', join(sort(split(getline('.'), ', ')), \", \"))"
+
