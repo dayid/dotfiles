@@ -1,3 +1,6 @@
+setlocal spell spelllang=en_us
+set spelllang=en
+set spellfile=$HOME/.vim/spell/en.utf-8.add
 syntax on
 filetype on
 set nowrap
