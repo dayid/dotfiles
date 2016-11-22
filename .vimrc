@@ -1,3 +1,4 @@
+set nocompatible
 setlocal spell spelllang=en_us
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
@@ -56,4 +57,8 @@ set hlsearch
 :let @m=":call setline('.', join(sort(split(getline('.'), ' ')), \" \"))"
 " alphabetize words in a line with comma-space as delimiter:
 :let @n=":call setline('.', join(sort(split(getline('.'), ', ')), \", \"))"
+" when applied, enumerate lines as a list (similar to 'nl') use ':normal @l' for this when in visual mode!
+:let b:i=1
+:let @l="I=b:i)		j:let b:i+=1"
+
 
